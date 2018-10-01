@@ -27,23 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         lvMain.adapter = myCustomAdapter2();
-
-        /*lvMain.setOnItemClickListener{ parent, view, position, id ->
-            val course = data!!.get(position); // !! helps force the data to be put in the course (even though course type is not defined) //when ArrayList is created, .get to get the data at specific position
-            displayDetail(course);
-
-            val intent = Intent(this, DetailActivity::class.java);
-
-            val pos = position%3+1;
-
-            intent.putExtra("title",course.toString());
-            intent.putExtra("desc",course.description);
-            intent.putExtra("courseno",course.courseNo.toString());
-            intent.putExtra("coursecredit",course.credits.toString());
-            intent.putExtra("imgpos",pos.toString());
-            startActivity(intent);
-        };*/
-
+        
     }
 
     private fun displayDetail(course: Course){
